@@ -1,6 +1,7 @@
 {
-  "baseUrl": "http://localhost:8000",
-  "description": "diffusion.md",
+  "baseUrl": "https://raw.githubusercontent.com/andeplane/atomify-examples-template/main",
+  "title": "Examples",
+  "descriptionFile": "diffusion.md",
   "examples": [
       {
           "id": "diffusion-2d-msd",
