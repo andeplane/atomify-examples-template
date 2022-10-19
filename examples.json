@@ -6,8 +6,8 @@
       {
           "id": "diffusion-2d-msd",
           "title": "2D diffusion MSD",
-          "description": "We measure the diffusion coefficient using the mean square displacement. The white atoms have mass 1 while the red atoms have mass 4. This results in the red atoms having diffusion coefficient half the value of the white ones.",
-          "analysisDescription": "# About this simulation\nWe simulate two Lennard Jones particle types with masses 1.0 and 4.0. The diffusion coefficient [https://en.wikipedia.org/wiki/Mass_diffusivity](scales like) D$\\propto 1/\\sqrt{m}$, so we should see a factor 2 higher diffusion coefficient for the small molecules.",
+          "description": "We measure the diffusion coefficient using the mean square displacement.",
+          "analysisDescription": "# About this simulation\nWe measure the diffusion coefficient using the mean square displacement.",
           "imageUrl": "diffusion-2d-msd/diffusion-2d-msd.png",
           "inputScript": "diffusion-2d-msd.in",
           "keywords": [
@@ -25,6 +25,29 @@
                 "url": "diffusion-2d-msd/diffusion-2d-msd.ipynb"
             }
           ]
-      }
+      },
+      {
+        "id": "diffusion-2d-vacf",
+        "title": "2D diffusion VACF",
+        "description": "We measure the diffusion coefficient using the velocity auto correlation function.",
+        "analysisDescription": "# About this simulation\nWe measure the diffusion coefficient using the velocity auto correlation function.",
+        "imageUrl": "diffusion-2d-vacf/diffusion-2d-vacf.png",
+        "inputScript": "diffusion-2d-vacf.in",
+        "keywords": [
+            "lennard jones",
+            "diffusion",
+            "velocity autocorrelation function"
+        ],
+        "files": [
+            {
+                "fileName": "diffusion-2d-vacf.in",
+                "url": "diffusion-2d-vacf/diffusion-2d-vacf.in"
+            },
+            {
+              "fileName": "diffusion-2d-vacf.ipynb",
+              "url": "diffusion-2d-vacf/diffusion-2d-vacf.ipynb"
+          }
+        ]
+    }
   ]
 }
