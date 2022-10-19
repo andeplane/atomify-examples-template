@@ -2,9 +2,9 @@
 
 ➡️ **https://andeplane.github.io/atomify?examplesUrl=https://raw.githubusercontent.com/andeplane/atomify-examples-template/main/examples.json**
 
-If you want customize the examples in Atomify for e.g. teaching, you can use this GitHub template (Click the green **Use this template** button in the top of the repository).
+If you want customize the examples in Atomify for e.g. teaching, you can use this GitHub template (Click the green **Use this template** button in the top of the repository). You can specify simulations and Python notebooks to perform analysis of the simulations.
 
-The configuration is a `examples.json` file that you can provide in the Atomify URL. The examples page in Atomify will then show your examples. The format of this file is
+The configuration is a file ([examples.json](https://github.com/andeplane/atomify-examples-template/blob/main/examples.json)) that you can provide in the Atomify URL. The examples page in Atomify will then show your examples. The format of this file is
 ```
 {
   "baseUrl": "https://raw.githubusercontent.com/andeplane/atomify-examples-template/main",
