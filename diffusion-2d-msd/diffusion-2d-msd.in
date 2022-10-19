@@ -1,6 +1,6 @@
 # Move camera to a nice position
-#/camera position 32.7 38.0 94.3
-#/camera target 35.0 35.4 10.0
+#/camera position 33.5 39.0 47.8
+#/camera target 34.9 38.2 10.1
 
 # Set atom size and color
 #/atom 1 1.0 #ffffff
@@ -35,7 +35,7 @@ fix langevin all langevin $t $t 0.1 498094
 fix enforce2d all enforce2d
 # equilibration run
 
-run 5000
+run 2000
 unfix langevin
 
 # data gathering run
@@ -48,5 +48,5 @@ variable diffusioncoeff equal c_msd[4]/4/(step*dt+1.0e-6)
 
 thermo_style custom step temp c_msd[4] v_diffusioncoeff
 
-thermo 1000
-run 100000
+thermo 25
+run 10000
