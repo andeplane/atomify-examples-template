@@ -52,3 +52,9 @@ The examples are on the format
 - `files` list of files needed for simulation and analysis. A file is an object with the two properties `fileName` and `url`. Full url becomes `{baseUrl}/{url}`
 
 # Local development
+When you are creating a new set of examples, you can point Atomify to a local server. You need to update the `baseUrl` to be `http://localhost:8000` in `examples.json`. Run the server with
+```
+python server.py
+```
+
+and open https://andeplane.github.io/atomify?examplesUrl=http://localhost:8000/examples.json
