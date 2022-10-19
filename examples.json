@@ -1,7 +1,7 @@
 {
-  "baseUrl": "https://raw.githubusercontent.com/andeplane/atomify-examples-template/main",
-  "title": "Examples",
-  "descriptionFile": "diffusion.md",
+  "baseUrl": "http://localhost:8000",
+  "title": "Diffusion examples",
+  "descriptionFile": "description.md",
   "examples": [
       {
           "id": "diffusion-2d-msd",
@@ -12,7 +12,8 @@
           "inputScript": "diffusion-2d-msd.in",
           "keywords": [
               "lennard jones",
-              "diffusion"
+              "diffusion",
+              "mean square displacement"
           ],
           "files": [
               {
