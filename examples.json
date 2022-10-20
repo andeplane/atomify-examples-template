@@ -8,6 +8,7 @@
           "title": "2D diffusion MSD",
           "description": "We measure the diffusion coefficient using the mean square displacement.",
           "analysisDescription": "# About this simulation\nWe measure the diffusion coefficient using the mean square displacement.",
+          "analysisScript": "2d-msd-diffusion.ipynb",
           "imageUrl": "2d-msd-diffusion/2d-msd-diffusion.png",
           "inputScript": "2d-msd-diffusion.in",
           "keywords": [
@@ -31,6 +32,7 @@
         "title": "2D diffusion VACF",
         "description": "We measure the diffusion coefficient using the velocity auto correlation function.",
         "analysisDescription": "# About this simulation\nWe measure the diffusion coefficient using the velocity auto correlation function.",
+        "analysisScript": "2d-msd-diffusion.ipynb",
         "imageUrl": "2d-vacf-diffusion/2d-vacf-diffusion.png",
         "inputScript": "2d-vacf-diffusion.in",
         "keywords": [

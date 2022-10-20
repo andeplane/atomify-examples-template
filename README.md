@@ -18,20 +18,21 @@ The configuration is a file ([examples.json](https://github.com/andeplane/atomif
       "title": "2D diffusion",
       "description": "We measure the diffusion coefficient",
       "analysisDescription": "This markdown formatted text appears in the default analyze notebook.",
-      "imageUrl": "diffusion-2d-msd/diffusion-2d-msd.png",
-      "inputScript": "diffusion-2d-msd.in",
+      "imageUrl": "2d-msd-diffusion/2d-msd-diffusion.png",
+      "inputScript": "2d-msd-diffusion.in",
+      "analysisScript": "2d-msd-diffusion.ipynb",
       "keywords": [
         "lennard jones",
         "diffusion"
       ],
       "files": [
         {
-            "fileName": "diffusion-2d-msd.in",
-            "url": "diffusion-2d-msd/diffusion-2d-msd.in"
+            "fileName": "2d-msd-diffusion.in",
+            "url": "2d-msd-diffusion/2d-msd-diffusion.in"
         },
         {
-          "fileName": "diffusion-2d-msd.ipynb",
-          "url": "diffusion-2d-msd/diffusion-2d-msd.ipynb"
+          "fileName": "2d-msd-diffusion.ipynb",
+          "url": "2d-msd-diffusion/2d-msd-diffusion.ipynb"
         }
       ]
     }
@@ -50,6 +51,7 @@ The examples are on the format
 - `analysisDescription (optional)` markdown formatted string that appears in the default analysis notebook
 - `imageUrl` url to the image. Full url becomes `{baseUrl}/{imageUrl}`
 - `inputScript` file name of the input script
+- `analysisScript` file name of a notebook that is the entry point of simulation analysis
 - `keywords` list of keywords that can be used to filter a larger set of simulations
 - `files` list of files needed for simulation and analysis. A file is an object with the two properties `fileName` and `url`. Full url becomes `{baseUrl}/{url}`
 
