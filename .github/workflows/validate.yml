@@ -1,0 +1,26 @@
+name: Validate examples
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check examples.json and referenced files
+        run: python3 scripts/validate.py
+      - name: Link to open this branch in Atomify
+        if: github.event_name == 'push'
+        run: |
+          url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/examples.json"
+          encoded=$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1], safe=""))' "$url")
+          {
+            echo "### Open in Atomify"
+            echo
+            echo "https://andeplane.github.io/atomify/?examplesUrl=${encoded}"
+          } >> "$GITHUB_STEP_SUMMARY"
